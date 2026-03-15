@@ -1,13 +1,131 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="head">
+  	<h1 class="nom">PORTFOLIO</h1>
+  	<div class="menu">
+     <a href="#"><i class="bi bi-house"></i> Accueil</a>
+     <a href="#pres"><i class="bi bi-person"></i> Présentation</a>
+     <a href="#parcours"><i class="bi bi-mortarboard"></i> Parcours</a>
+     <a href="#competences"><i class="bi bi-list-check"></i> Compétences</a>
+     <a href="#projets"><i class="bi bi-person-workspace"></i> Projets</a>
+     <a href="#veilles"><i class="bi bi-vector-pen"></i> Veilles</a>
+   </div>
+ </header>
+
+ <div id="main">
+    <div id="ascii-maxence"></div>
+    <div id="ascii-barthelemy"></div>
+    <p style="color: #D76C58;" class="display-6 fw-bold text-uppercase">BTS SIO option SLAM.</p>
+</div>
+
+<div id="pres">
+  <div class="center-items">
+   <h1 class="container">Présentation</h1>
+   <h2 class="container">BTS SIO</h2>
+   <p class="container" id="desc"></p>
+   <a href="doc/cv.pdf" target="_blank" class="btnStage btnPres"><p class="txtBtnStage txtBtnPres">CV</p></a>
+ </div>
+ <div class="iframe-wrapper">
+      <iframe src="doc/cv.pdf"></iframe>
+ </div>
+</div>
+
+<div id="parcours" class="container">
+	<h1>Parcours</h1>
+	<h2>Parcours scolaire</h2>
+
+	<div class="container mt-5 mb-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<ul class="timeline">
+					<li>
+						<h3>BAC STI2D - Saint-Thomas d'Aquin</h3>
+						<h4>2022-2024</h4>
+						<p>Option énergies et environnement</p>
+					</li>
+					<li>
+						<h3>BTS SIO - ORT LYON</h3>
+						<h4>2024-2026</h4>
+						<p>Option Solutions Logicielles et Applications Métiers</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  <h2>Mes stages</h2>
+  <div class="container">
+  <div class="stage">
+    <div class="descStage">
+      <div>
+        <p class="titre">Exo-Partners</p>
+        <p class="date">Juin 2025</p>
+      </div>
+      <div class="center-items min-width330">
+        <p class="ctn">Stage de première année</p>
+
+        <a href="epreuveE4.html" class="btnStage">
+          <p class="txtBtnStage">Rapport de stage</p>
+        </a>
+      </div>
+    </div>
+    <div class="divImg">
+     <img class="imgStage" src="img/exo.jpg">
+   </div>
+ </div>
+
+ <div class="stage">
+  <div class="descStage">
+    <div>
+      <p class="titre">SECA</p>
+      <p class="date">Janvier 2026</p>
+    </div>
+    <div class="center-items min-width330 ">
+      <p class="ctn">Stage de deuxième année</p>
+
+      <a href="epreuveE4.html" class="btnStage">
+        <p class="txtBtnStage">Rapport de stage</p>
+      </a>
+    </div>
+  </div>
+  <div class="divImg">
+    <img class="imgStage" src="img/seca.png">
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
+<div id="veilles" class="container margBottom">
+	<h1>Veilles</h1>
+</div>
+
+<footer id="contact">
+	<h2>Contact</h2>
+	<div>
+		<div id="footer">
+			<p><i class="bi bi-geo-alt"></i> Lyon, France</p>
+			<p><i class="bi bi-telephone"></i> 0622186784 | <i class="bi bi-envelope"></i> maxencebarth12@gmail.com | <a href="https://www.linkedin.com/in/maxence-barthelemy-bb624a374/" target="_blank"><i class="bi bi-linkedin"></i></a> | <a href="https://github.com/maxence468" target="_blank"><i class="bi bi-github"></i></a></p>
+			<hr />
+			<p>Maxence BARTHELEMY</p>
+		</div>
+	</div>
+</footer>
+
+<script type="module" src="/src/main.jsx"></script>
+<script src="script.js"> </script>
+
+</body> 	
 </html>
