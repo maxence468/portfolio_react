@@ -1,6 +1,6 @@
 html, body {
   overflow-x: hidden;
-  background-color: #f2f2f2;
+  background-color: #0a0f0d;
   /*#f2f2f2 #fff1e6*/
 
 }
@@ -11,15 +11,12 @@ html, body {
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
-    background-color: rgba(34, 45, 65, 1);
+    background-color: #111a14;
     order: 100;
     z-index: 10000;
     height:10vh;
 }
 
-.nom {
-	color: rgba(215, 108, 88, 1);
-}
 
 .menu {
   display: flex;
@@ -33,7 +30,7 @@ html, body {
 }
 
 .menu a:hover{
-    color: rgba(215, 108, 88, 1);
+    color: #00ff88;
 }
 
 #main{
@@ -42,7 +39,7 @@ html, body {
     align-items: center;
     justify-content: center;
 	margin-top: 10vh;
-    background-color: rgba(55, 65, 88, 1);
+    background-color: #1a2a1e;
     color: white;
     height: 90vh;
 }
@@ -78,21 +75,13 @@ html, body {
 }
 
 h1{
-	color: rgba(215, 108, 88, 1);
+	color:#00ff88;
 }
 
 h2{
-	color: rgba(55, 65, 88, 1);
+	color: #7ab898;
 }
-.btnPres{
-    background-color: rgba(215, 108, 88, 1) !important;
-    width: 10% !important;
-}
-.txtBtnPres:hover{
-    color: white !important;
-    position: relative;
-    margin: 0;
-}
+
 #pres{
 	margin: 2% 5%;
     display: flex;
@@ -118,6 +107,7 @@ h2{
     margin: 5%;
     width: 80%;
     font-size: 115%;
+    background-color: transparent !important;
 
 }
 
@@ -125,9 +115,12 @@ ul.timeline {
     list-style-type: none;
     position: relative;
 }
+ul.timeline > li * {
+  color: #f0fff5;
+}
 ul.timeline:before {
     content: ' ';
-    background: rgba(17, 21, 29, 1);
+    background: #7ab898;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -145,7 +138,7 @@ ul.timeline > li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid rgba(215, 108, 88, 1);
+    border: 3px solid #00ff88;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -158,20 +151,11 @@ ul.timeline > li:before {
     justify-content: space-around;
     margin: 5% 10% 5% 10%;
     padding:0% 0% 0% 0%;
-    background-color: rgba(55, 65, 88, 1);
-    color: white;
-    border-radius: 8px;
+    border: 2px solid #1f3328;
+    color: #f0fff5;
+    border-radius: 20px;
     box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.5);
     font-size: 120%;
-}
-
-.stage:hover{
-    background-color: rgba(215, 108, 88, 1);
-    color: black;
-    transition: background-color 1s, color 1s, box-shadow 1s;
-    box-shadow: 0px 8px 35px 20px rgba(0, 0, 0, 0.5);
-
-
 }
 
 .imgStage{
@@ -197,50 +181,13 @@ ul.timeline > li:before {
     min-width: 330px;
 }
 .btnStage{
-    background-color: white;
-    border: none;
-    border-radius: 3px;
-    color: transparent;
-
-    position: relative;
-    overflow:hidden;
-
-    padding: 10px;
-    width: 60%;
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    border: 2px solid #1f3328;
+    border-radius: 20px;
+    padding: 0 5%;
+    text-decoration: none;
+    color: #009944;
+    font-size:medium;
 }
-.txtBtnStage{
-    position: relative;
-    color: black;
-    margin: 0;
-    text-align: center;
-    font-size: 80%;
-}
-
-.txtBtnStage:hover{
-    color: white;
-    transition: color 0.5s ease;
-
-}
-
-.btnStage::before{
-    content: "";
-    inset: 0;
-    position: absolute;
-    background-color: rgb(55, 65, 88);
-
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 1s ease;
-}
-
-.btnStage:hover::before{
-    transform: scaleX(1);
-}
-
 
 .titre{
     font-weight: bolder;
@@ -260,29 +207,29 @@ table{
 }
 
 .entete th{
-    background-color: rgba(34, 45, 65, 1);
+    background-color: #111a14;
     color: white; 
 }
 td{
-    background-color: rgba(113, 130, 168, 1) !important;
+    background-color: #1a2a1e !important;
 }
 .croix{
     font-size: 30px;
 }
 
 .realisation{
-    background-color: rgba(55, 65, 88, 1) !important;
+    background-color: #1a2a1e !important;
 }
 
 footer{
-    background-color: rgba(55, 65, 88, 1);
+    background-color: #111a14;
     width: 100%;
     position: absolute;
     padding: 50px 0px;
 }
 #footer{
     width: 100%;
-    color: white;
+    color: #f0fff5;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -294,13 +241,16 @@ footer{
 
 footer h2{
     position: relative;
-    color: white;
     left: 16%;
 }
 
 hr{
     color: darkred;
 
+}
+
+.bi {
+  color: #00ff88;
 }
 
 

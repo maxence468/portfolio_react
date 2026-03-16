@@ -10,7 +10,7 @@ import TextType from './component/TextType'
 createRoot(document.getElementById('hello')).render(
   <StrictMode>
     <TextType 
-  text={["Bienvenue sur mon portfolio"]}
+  text={["Bienvenue sur mon portfolio", "Maxence Barthelemy"]}
   typingSpeed={75}
   pauseDuration={1500}
   showCursor
@@ -26,8 +26,8 @@ createRoot(document.getElementById('hello')).render(
 
 
 createRoot(document.getElementById('desc')).render(
-  <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(215, 108, 88, 0.4)">
-  <h3 style={{ color: "#D76C58", marginBottom: "12px" }}>À propos</h3>
+  <SpotlightCard spotlightColor="#33ffaa">
+  <h2 style={{ marginBottom: "12px" }}>À propos</h2>
   <p style={{ color: "white", lineHeight: "1.7", margin: 0 }}>
     Actuellement étudiant en BTS SIO option SLAM (Solutions Logicielles et 
     Applications Métiers) à l'école ORT LYON. Je vous propose sur ce portfolio 
