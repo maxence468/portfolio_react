@@ -47,12 +47,8 @@ html, body {
     height: 90vh;
 }
 
-#ascii-maxence, #ascii-barthelemy {
-  position: relative;
-  width: 100%;
-  height: 20vh;
-    pointer-events: none;
-
+#hello{
+    color: white;
 }
 
 #card{
@@ -93,7 +89,7 @@ h2{
     width: 10% !important;
 }
 .txtBtnPres:hover{
-    color: white !important
+    color: white !important;
     position: relative;
     margin: 0;
 }

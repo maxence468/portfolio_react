@@ -4,31 +4,23 @@ import './index.css'
 import App from './App.jsx'
 import AsciiText from './component/ASCIIText'
 import SpotlightCard from './component/SpotlightCard'
+import TextType from './component/TextType'
 
 
-createRoot(document.getElementById('ascii-maxence')).render(
+createRoot(document.getElementById('hello')).render(
   <StrictMode>
-    <AsciiText
-        text="Maxence"
-        enableWaves={false}
-        asciiFontSize={10}
-        
-        planeBaseHeight={18}
-      />
-
-  </StrictMode>,
-)
-
-createRoot(document.getElementById('ascii-barthelemy')).render(
-  <StrictMode>
-    <AsciiText
-        text="BARTHELEMY"
-        enableWaves={false}
-        asciiFontSize={10}
-        
-        planeBaseHeight={18}
-        
-      />
+    <TextType 
+  text={["Bienvenue sur mon portfolio"]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor
+  cursorCharacter="|"
+  deletingSpeed={50}
+  variableSpeedEnabled={true}
+  variableSpeedMin={60}
+  variableSpeedMax={120}
+  cursorBlinkDuration={0.5}
+  />
   </StrictMode>,
 )
 
