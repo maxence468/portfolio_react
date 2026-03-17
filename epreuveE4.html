@@ -96,6 +96,15 @@
       <td></td>
       <td><i class="bi bi-check-lg croix"></i></td>
     </tr>
+    <tr style="cursor:pointer;" onclick="window.open('https://www.linkedin.com/in/maxence-barthelemy-bb624a374/', '_blank')">
+      <th><p>TP GLPI</p></th>
+      <td></td>
+      <td><i class="bi bi-check-lg croix"></i></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr>
       <th class="realisation" colspan="7">Réalisations en milieu professionnel en cours de première année</th>
     </tr>
@@ -154,6 +163,14 @@
 </a>
 </div>
 
+<div id="stage1" class="container margBottom">
+	<h1>Stage 1</h1>
+</div>
+
+<div id="stage2" class="container margBottom">
+	<h1>Stage 2</h1>
+</div>
+
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
@@ -174,53 +191,7 @@
 	</div>
 </footer>
 
-
 <script src="script.js"> </script>
-<script>
 
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("modalImg");
-  var closeBtn = document.getElementsByClassName("close")[0];
-  var prev = document.getElementsByClassName("prev")[0];
-  var next = document.getElementsByClassName("next")[0];
-  var triggers = document.getElementsByClassName("myText");
-
-  var currentImages = [];
-  var currentIndex = 0;
-
-
-  for (let i = 0; i < triggers.length; i++) {
-    triggers[i].onclick = function() {
-    // Récupérer les images associées à ce texte
-      currentImages = JSON.parse(this.getAttribute("data-images"));
-      currentIndex = 0;
-      showImage(currentIndex);
-      modal.style.display = "block";
-    }
-  }
-
-// Fonction pour afficher une image
-  function showImage(index) {
-    modalImg.src = currentImages[index];
-  }
-
-  prev.onclick = function() {
-    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-    showImage(currentIndex);
-  }
-  next.onclick = function() {
-    currentIndex = (currentIndex + 1) % currentImages.length;
-    showImage(currentIndex);
-  }
-
-  closeBtn.onclick = function() {
-    modal.style.display = "none";
-  }
-
-
-
-
-
-</script>
 </body> 	
 </html>
