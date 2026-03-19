@@ -9,7 +9,7 @@ import TextType from './component/TextType'
 createRoot(document.getElementById('hello')).render(
   <StrictMode>
     <TextType 
-  text={["Bienvenue sur mon portfolio", "Maxence Barthelemy"]}
+  text={["Bienvenue sur mon portfolio", "Maxence BARTHELEMY"]}
   typingSpeed={75}
   pauseDuration={1500}
   showCursor
