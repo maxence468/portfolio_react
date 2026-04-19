@@ -25,18 +25,37 @@
     modalImg.src = currentImages[index];
   }
 
-  prev.onclick = function() {
+  function previousImage(){
     currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
     showImage(currentIndex);
   }
-  next.onclick = function() {
+  function nextImage(){
     currentIndex = (currentIndex + 1) % currentImages.length;
     showImage(currentIndex);
   }
-
-  closeBtn.onclick = function() {
+  function closeModal(){
     modal.style.display = "none";
   }
+
+  prev.onclick = previousImage;
+
+  next.onclick = nextImage;
+
+  closeBtn.onclick = closeModal;
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape" || event.key === "Enter") {
+      closeModal();
+    }
+    if(event.key == "ArrowLeft"){
+      previousImage();
+    }
+    if(event.key == "ArrowRight"){
+      nextImage();
+    }
+    
+    
+});
 
 
 
