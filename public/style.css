@@ -285,6 +285,9 @@ hr{
   margin: auto;
   max-width: 80%;
   max-height: 80%;
+  min-width: 400px;
+  min-height: 600px;
+  object-fit: contain;
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
